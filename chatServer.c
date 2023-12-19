@@ -1,5 +1,4 @@
 /**Name:Mohammad Belbesi**/
-
 #include <stdio.h>
 #include <signal.h>
 #include <unistd.h>
@@ -41,14 +40,6 @@ int main(int argc, char * argv[]) {
         printf("Usage: chatServer <port>\n");
         exit(EXIT_SUCCESS);
     }
-    /*if(atoi(argv[1])<0){
-        printf("Usage: server <port>\n");
-        exit(EXIT_FAILURE);
-    }
-    if(argc!=2){
-        printf("Usage: server <port>\n");
-        exit(EXIT_FAILURE);
-    }*/
     conn_pool_t * pool = calloc(1, sizeof(conn_pool_t));
     if (pool == NULL) {
         fprintf(stderr, "message_content allocating memory is filed!\n");
